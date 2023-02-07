@@ -1,0 +1,12 @@
+To connect repo and push files in to that repo:
+Step1: Go to that path in CMD
+Step2: git init
+Step3: git add .
+Step4: git commit -m "2 commit"
+Step5: git branch -m Primary
+Step6: git remote add origin https://github.com/Aries-Surya/NBA-SAEC.git
+Step7: git push -u origin Primary
+Step8: Over 
+
+To clone from githup:
+git clone https://github.com/Aries-Surya/demo.git
