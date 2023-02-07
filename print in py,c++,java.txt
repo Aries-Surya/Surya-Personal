@@ -1,0 +1,29 @@
+python program:
+print("Hello world!")
+
+c++ Program:
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"Hello World!";
+    return 0;
+}
+
+java program:
+class HelloWorld {
+    public static void main(string[] args)
+{
+        system.out.println("HelloWorld!");
+    }
+}
+
+C Program:
+#include<stdio.h>
+void main()
+{
+    char n[25];
+    printf("Enter ur name:");
+    gets(n);
+    printf("Ur Good name is: %s",n);
+}

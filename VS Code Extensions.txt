@@ -1,0 +1,32 @@
+Wolf
+Test Runner for Java
+Remote-WSL
+Remote-SSH
+Remote-Containers
+Python
+Pylance
+Project Manager for Java
+One Dark Pro
+Maven for Java
+Material Theme Icons
+Material Theme
+Material Icon Theme
+Language Support for Java(TM) by Red Hat
+Jupyter Notebook Renderers
+Jupyter Keymap
+Jupyter
+IntelliCode
+HTML Snippets
+Extension Pack for Java
+Doxygen Documentation Generator
+Debugger for Java
+Community Material Theme
+Code Runner
+CMake Tools
+CMake Language Support
+CMake
+C/C++ Themes
+C/C++ Extension Pack
+C/C++
+Better C++ Syntax
+.NET Install Tool for Extension Authors
