@@ -2,11 +2,11 @@ To connect repo and push files in to that repo:
 Step1: Go to that path in CMD
 Step2: git init
 Step3: git add .
-Step4: git commit -m "2 commit"
-Step5: git branch -m Primary
-Step6: git remote add origin https://github.com/Aries-Surya/NBA-SAEC.git
-Step7: git push -u origin Primary
+Step4: git commit -m "commit name"
+Step5: git remote add origin "Remote_origin_URL"
+Step6: git branch -M "Branch_name"
+Step7: git push -u origin "Branch_name"
 Step8: Over 
 
 To clone from githup:
-git clone https://github.com/Aries-Surya/demo.git
+git clone "Repo_URL"
