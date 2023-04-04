@@ -1,3 +1,5 @@
+Code: foreach ($line in Get-Content "Filename.txt") { code --install-extension $line }
+
 Wolf
 Test Runner for Java
 Remote-WSL
@@ -15,7 +17,7 @@ Language Support for Java(TM) by Red Hat
 Jupyter Notebook Renderers
 Jupyter Keymap
 Jupyter
-IntelliCode
+IntelliCode 
 HTML Snippets
 Extension Pack for Java
 Doxygen Documentation Generator
@@ -30,3 +32,4 @@ C/C++ Extension Pack
 C/C++
 Better C++ Syntax
 .NET Install Tool for Extension Authors
+Code GPT
