@@ -1,3 +1,5 @@
+Code: foreach ($line in Get-Content "Filename.txt") { code --install-extension $line }
+
 trabpukcip.wolf
 vscjava.vscode-java-test
 ms-vscode-remote.remote-wsl

@@ -1,0 +1,7 @@
+#Code to install all extenstions listed in txt in only click:
+foreach ($line in Get-Content "Filename.txt") { code --install-extension $line }
+
+#Code to install all packages listed in txt in only click(PIP):
+pip install -r Filename.txt
+
+#
