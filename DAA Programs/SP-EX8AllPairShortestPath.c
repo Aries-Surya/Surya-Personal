@@ -63,3 +63,32 @@ void main()
     }
     getch();
 }
+
+// Enter the number of vertices:4
+// Enter the number of edges:5
+// Enter the end vertices of edge 1 with its weight: 1 3 2
+// Enter the end vertices of edge 2 with its weight: 2 1 2
+// Enter the end vertices of edge 3 with its weight: 3 2 7 
+// Enter the end vertices of edge 4 with its weight: 3 4 1
+// Enter the end vertices of edge 5 with its weight: 4 1 6
+// Matrix of input data:9999992999
+// 2999999999
+// 99979991
+// 6999999999
+// Transitive closure:0 t9 t2 t3 t
+// 2 t0 t4 t5 t
+// 7 t7 t0 t1 t
+// 6 t15 t8 t0 t
+// The shortest paths are:
+//  <1,2>=9
+//  <1,3>=2
+//  <1,4>=3
+//  <2,1>=2
+//  <2,3>=4
+//  <2,4>=5
+//  <3,1>=7
+//  <3,2>=7
+//  <3,4>=1
+//  <4,1>=6
+//  <4,2>=15
+//  <4,3>=8

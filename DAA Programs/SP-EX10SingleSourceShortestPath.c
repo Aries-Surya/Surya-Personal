@@ -15,7 +15,7 @@ int main()
     printf("\nEnter the starting node:");
     scanf("%d",&u);
     dijkstra(G,n,u);
-    getch();
+    //getch();
     return 0;
 }
 void dijkstra(int G[MAX][MAX],int n,int startnode)
@@ -71,3 +71,26 @@ void dijkstra(int G[MAX][MAX],int n,int startnode)
             }
     }
 }
+
+// Enter no. of vertices:4
+
+// Enter the adjacency matrix:
+// 0 1 3 4
+// 2 3 4 1
+// 1 0 1 0
+// 3 2 4 5
+
+// Enter the starting node:0
+
+// Distance of node1=1
+// Path=1<-0
+// Distance of node2=3
+// Path=2<-0
+// Distance of node3=2
+// Path=3<-1<-0
+// Distance of node1=1
+// Path=1<-0
+// Distance of node2=3
+// Path=2<-0
+// Distance of node3=2
+// Path=3<-1<-0

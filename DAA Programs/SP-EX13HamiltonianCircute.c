@@ -89,3 +89,8 @@ void main()
     hamCycle(graph2);
     getch();
 }
+
+// Solution Exists: Following is one Hamiltonian Cycle 
+//  0  1  2  4  3  0 
+
+// Solution does not exist

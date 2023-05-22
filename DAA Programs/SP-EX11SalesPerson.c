@@ -80,3 +80,23 @@ void main ()
     printf(" % ");
     getch();
 }
+
+// Enter n : 4
+// Enter cost matrix
+// 0 10 15 20
+// 5 0 9 10
+// 6 13 0 12
+// 8 8 9 0
+
+// Enter source : 1
+// 1 2 3 4 sum = 39
+// 1 2 4 3 sum = 35
+// 1 3 2 4 sum = 46
+// 1 3 4 2 sum = 40
+// 1 4 3 2 sum = 47
+// 1 4 2 3 sum = 43
+
+// Optimum solution with brute force technique is=35.000000
+
+// Solution with nearest neighbour technique is=39.000000
+// The approximation val is=11.428571 

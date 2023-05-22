@@ -20,3 +20,6 @@ int countBit(int n)
     }
     return ++count;
 }
+
+// Enter a number 20
+// Number of bits=5

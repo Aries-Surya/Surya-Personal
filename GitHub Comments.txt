@@ -2,10 +2,10 @@ To connect repo and push files in to that repo:
 Step1: Go to that path in CMD
 Step2: git init
 Step3: git add .
-Step4: git commit -m "commit name"
+Step4: git commit -m "initialCommit"
 Step5: git remote add origin "Remote_origin_URL"
-Step6: git branch -M "Branch_name"
-Step7: git push -u origin "Branch_name"
+Step6: git branch -M "main"
+Step7: git push -u origin "main"
 Step8: Over 
 
 To clone from githup:

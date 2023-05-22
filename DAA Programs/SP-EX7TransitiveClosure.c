@@ -46,3 +46,29 @@ void warshal(int p[10][10],int n)
     }
     getch();
 }
+
+//  Enter the number of vertices:5
+
+//  Enter the number of edges:4
+
+//  Enter the end vertices of edge 1:1 2
+
+//  Enter the end vertices of edge 2:2 3
+
+//  Enter the end vertices of edge 3:3 4
+
+//  Enter the end vertices of edge 4:4 5
+
+//  Matrix of input data: 
+// 0       1       0       0       0
+// 0       0       1       0       0
+// 0       0       0       1       0
+// 0       0       0       0       1
+// 0       0       0       0       0
+
+//  Transitive closure:
+// 0       1       1       1       1
+// 0       0       1       1       1
+// 0       0       0       1       1
+// 0       0       0       0       1
+// 0       0       0       0       0

@@ -1,4 +1,4 @@
-Code: foreach ($line in Get-Content "Filename.txt") { code --install-extension $line }
+Code: foreach ($line in Get-Content "extension.txt") { code --install-extension $line }
 
 trabpukcip.wolf
 vscjava.vscode-java-test

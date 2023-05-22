@@ -81,3 +81,27 @@ int main()
     getch();
     return 0;
 }
+
+// Enter the number of elements: 4
+// Enter the values: 1 4 2 6
+// Enter the weights: 5 3 2 6
+// Enter the capacity of knapsack: 6
+
+//         0       1       2       3       4       5       6
+// -------------------------------------------------------------
+// 0 |     0       0       0       0       0       0       0
+// 1 |     0       0       0       0       0       1       1
+// 2 |     0       0       0       4       4       4       4
+// 3 |     0       0       2       4       4       6       6
+// 4 |     0       0       2       4       4       6       6
+
+// The resultant vector is ( 0 1 1 0 )
+
+// The total profit is 6
+
+// The objects selected are
+// Weight  Profit
+
+
+// 3       4
+// 2       2

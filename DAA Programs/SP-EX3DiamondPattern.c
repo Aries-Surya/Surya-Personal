@@ -1,24 +1,26 @@
 #include<stdio.h>
-int main()
+void main()
 {
-    int n,c,k;
-    printf("Enter no of rows: ");
+    int n,i,j,k;
+    printf("Enter the row:");
     scanf("%d",&n);
-    for (k=0;k<=n;k++)
-    {
-        for(c=0;c<=n-k;c++)
-            printf(" ");
-        for (c=0;c<=k-1;c++)
+    for(i=1;i<=n;i++){
+        for(j=1;j<=n-i;j++){
+            printf("  ");
+        }
+        for(k=1;k<=2*i-1;k++){
             printf(" *");
-            printf("\n");
+        }
+        printf("\n");
     }
-    for(k=1;k<=n-1;k++)
-    {
-        for(c=0;c<=k;c++)
-            printf(" ");
-        for(c=0;c<=(n-k)-1;c++)
+    for(i=n-1;i>=1;i--){
+        for(j=1;j<=n-i;j++){
+            printf("  ");
+        }
+        for(k=1;k<=2*i-1;k++){
             printf(" *");
-            printf("\n");
+        }
+        printf("\n");
     }
-    return 0;
 }
+

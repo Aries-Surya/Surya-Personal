@@ -16,3 +16,6 @@ long int factorial(int n)
     else
     return n*factorial(n-1);
 }
+
+// Enter integer number:5
+// Factorial of 5 = 120
