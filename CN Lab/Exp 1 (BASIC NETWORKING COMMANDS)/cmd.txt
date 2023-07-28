@@ -1,0 +1,6 @@
+ipconfig
+netstat
+nslookup
+tracert www.google.com
+tcpdump -option
+ping www.google.com
