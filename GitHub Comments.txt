@@ -1,3 +1,6 @@
+git config --global user.email "ariessurya8124@gmail.com"
+git config --global user.name "aries-surya"
+
 To connect repo and push files in to that repo:
 Step1: Go to that path in CMD
 Step2: git init
@@ -5,8 +8,40 @@ Step3: git add .
 Step4: git commit -m "initialCommit"
 Step5: git remote add origin "Remote_origin_URL"
 Step6: git branch -M "main"
+Step7: git pull request
 Step7: git push -u origin "main"
 Step8: Over 
 
 To clone from githup:
 git clone "Repo_URL"
+
+Sure, here's a list of some common and useful Git commands:
+
+1. git init: Initialize a new Git repository in the current directory.
+2. git clone [repository URL]**: Clone a remote repository to your local machine.
+3. git add [file(s)]: Start tracking changes in the specified file(s) or stage them for commit.
+4. git commit -m "[commit message]": Commit the staged changes with a descriptive message.
+5. git status: Show the status of your working directory, including tracked/untracked files.
+6. git log: Display the commit history of the repository.
+7. git diff: Show the differences between your working directory and the last commit.
+8. git branch: List all branches in the repository.
+9. git branch [branch name]: Create a new branch.
+10. git checkout [branch/commit/tag]: Switch to the specified branch, commit, or tag.
+11. git merge [branch name]: Merge changes from one branch into the current branch.
+12. git pull: Fetch changes from a remote repository and merge them into the current branch.
+13. git push [remote] [branch]: Push your local commits to a remote repository.
+14. git remote add [remote name] [repository URL]: Add a remote repository.
+15. git remote -v: List configured remote repositories.
+16. git fetch: Download changes from a remote repository without merging.
+17. git rm [file(s)]: Remove files from both the working directory and the Git repository.
+18. git mv [old path] [new path]: Move or rename a file within the repository.
+19. git stash: Temporarily save changes that are not ready to be committed.
+20. git reset [file(s)]: Unstage staged changes or reset files to a specific commit.
+21. git config --global [option]: Set configuration options globally.
+22. git tag [tag name]: Create a lightweight tag for the current commit.
+23. git show [commit hash]: Display information about a specific commit.
+24. git remote rm [remote name]: Remove a remote repository from the configuration.
+25. git checkout -- [file(s)]: Discard changes in the working directory for the specified file(s).
+26. git revert [commit hash]: Create a new commit that undoes the changes of a specific commit.
+
+Remember that Git has a wealth of commands and options beyond these basics. It's a good idea to refer to the official Git documentation or other resources for more detailed explanations of each command and its usage.
