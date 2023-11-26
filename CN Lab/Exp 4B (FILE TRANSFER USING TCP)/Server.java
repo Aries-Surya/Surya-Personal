@@ -1,7 +1,6 @@
 import java.io.*;
 import java.net.*;
-import java.util.*;
-
+// import java.util.*;
 class Serverfile {
     public static void main(String args[]) {
         try {
@@ -20,8 +19,10 @@ class Serverfile {
                 }
                 f.close();
                 dout.writeBytes("-1\n");
+                obj.close();
             }
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             System.out.println(e);
         }
     }

@@ -6,17 +6,19 @@ public class echoserver {
         ServerSocket m = null;
         Socket c = null;
         DataInputStream usr_inp = null;
-        DataInputStream din = new DataInputStream(System.in);
+        // DataInputStream din = new DataInputStream(System.in);
         DataOutputStream dout = null;
         try {
             m = new ServerSocket(5678);
             c = m.accept();
             usr_inp = new DataInputStream(c.getInputStream());
             dout = new DataOutputStream(c.getOutputStream());
-        } catch (IOException e) {
+        } 
+        catch (IOException e) { 
+            System.out.println(e);
         }
         if (c != null || usr_inp != null) {
-            String unip;
+            // String unip;
             while (true) {
                 System.out.println("\nMessage from Client...");
                 String m1 = (usr_inp.readLine());

@@ -1,12 +1,12 @@
-import javax.swing.*;
+// import javax.swing.*;
 import java.net.*;
-import java.awt.image.*;
-import javax.imageio.*;
+// import java.awt.image.*;
+// import javax.imageio.*;
 import java.io.*;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.IOException;
+// import java.io.IOException;
 import javax.imageio.ImageIO;
 
 public class Client {
@@ -19,7 +19,7 @@ public class Client {
 
       try {
          System.out.println("Reading image from disk. ");
-         img = ImageIO.read(new File("D:\\VS Code (Surya)\\CN Lab\\Exp 2 (TCP SOCKETS)\\img.jpg"));
+         img = ImageIO.read(new File("img.jpg"));
          ByteArrayOutputStream baos = new ByteArrayOutputStream();
 
          ImageIO.write(img, "jpg", baos);

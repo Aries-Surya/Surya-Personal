@@ -1,7 +1,6 @@
 import java.io.*;
 import java.net.*;
-import java.util.*;
-
+// import java.util.*;
 class Clientfile {
     public static void main(String args[]) {
         try {
@@ -14,7 +13,7 @@ class Clientfile {
             dout.writeBytes(str + '\n');
             System.out.println("Enter the new file name:");
             String str2 = in.readLine();
-            String str1, ss;
+            String str1;
             FileWriter f = new FileWriter(str2);
             char buffer[];
             while (true) {

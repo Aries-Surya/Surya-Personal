@@ -7,9 +7,9 @@ import javax.swing.*;
 
 class Server {
    public static void main(String args[]) throws Exception {
-      ServerSocket Server = null;
+      ServerSocket Server = new ServerSocket(5000);
       Socket socket;
-      Server = new ServerSocket(5000);
+      // Server = new ServerSocket(5000);
       System.out.println("Server Waiting for image");
 
       socket = Server.accept();
@@ -37,5 +37,7 @@ class Server {
       f.add(l);
       f.pack();
       f.setVisible(true);
+      Server.close();
+      socket.close();
    }
 }
