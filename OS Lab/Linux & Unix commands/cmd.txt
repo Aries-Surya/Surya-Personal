@@ -1,0 +1,13 @@
+$ cat > filename
+$ pwd
+$ mkdir dirname
+$ date +option
+$ cal option
+$ who
+$ who am I
+$ MAN
+$ clear
+$ ls options
+$ sort -n sample
+$ command<filename>
+$ command<source><destination>
