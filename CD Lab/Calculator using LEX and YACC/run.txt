@@ -1,0 +1,10 @@
+TO COMPILE & RUNwrite
+the following linux command & press enter:
+lex calci.l
+yacc -d calci.y
+cc lex.yy.c y.tab.c
+./a.out
+
+Now it will print:
+Enter the expression in terms of integers:
+5*8+3 43 Success
