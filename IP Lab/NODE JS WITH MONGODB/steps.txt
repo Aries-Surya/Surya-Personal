@@ -1,0 +1,65 @@
+1.Install MongoDB Driver 
+    C:\Users\Your Name>npm install mongodb
+    
+2.Creating a Database create_mongo_db.js 
+    var MongoClient = require('mongodb').MongoClient; 
+    var url = "mongodb://localhost:27017/mydb"; 
+    MongoClient.connect(url, function(err, db) { 
+        if (err) throw err; console.log("Database created!"); 
+        db.close(); 
+    }); 
+        
+    C:\Users\Your Name>node create_mongo_db.js Output: Database created!
+
+3. Creating a Collection createcollection.js 
+    var MongoClient = require('mongodb').MongoClient; 
+    var url = "mongodb://localhost:27017/"; 
+    MongoClient.connect(url, function(err, db) { 
+        if (err) throw err; 
+        var dbo = db.db("mydb"); 
+        dbo.createCollection("customers", 
+        function(err, res) { 
+            if (err) throw err; 
+            console.log("Collection created!"); 
+            db.close(); 
+        }); }); 
+        
+    C:\Users\Your Name>node createcollection.js Output: Collection created!
+
+4.Insert a document in the "customers" collection:
+Insert.js 
+    var MongoClient = require('mongodb').MongoClient;
+    var url = "mongodb://localhost:27017/"; 
+    MongoClient.connect(url, function(err, db) { 
+        if (err) throw err; 
+        var dbo = db.db("mydb"); 
+        var myobj = { name: " SA Engineering College", address: "Poonamallee 77" }; 
+        dbo.collection("customers").insertOne(myobj, function(err, res) { 
+            if (err) throw err; 
+            console.log("1 document inserted"); 
+            db.close(); 
+        });
+     }); 
+    
+    C:\Users\Your Name>node insert.js Output: 1 document inserted
+
+5.Select a document in the "customers" collection:
+Select.js 
+    var MongoClient = require('mongodb').MongoClient; 
+    var url = "mongodb://localhost:27017/"; 
+    MongoClient.connect(url, function(err, db) { 
+        if (err) throw err; 
+        var dbo = db.db("mydb"); 
+        dbo.collection("customers").find({}, function(err, result) { if (err) throw err; console.log(result.name); 
+        db.close(); 
+    }); 
+    });
+
+    C:\Users\Your Name>node select.js
+
+Output:
+[   
+    { _id: 58fdbf5c0ef8a50b4cdd9a84 , name: ' SA Engineering College ', address: Poonamallee 77'}, 
+    { _id: 58fdbf5c0ef8a50b4cdd9a85 , name: 'S.A Arts College', address: 'Thiruverkadu 77'}, 
+    { _id: 58fdbf5c0ef8a50b4cdd9a86 , name: 'S.A Polytechnic College', address: 'Paruthipattu 47'}
+]

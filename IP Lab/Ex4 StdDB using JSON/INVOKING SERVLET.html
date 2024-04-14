@@ -1,0 +1,57 @@
+<HTML>
+
+<HEAD>
+    <TITLE> Logic Form </TITLE>
+</HEAD>
+
+<BODY>
+    <FORM name="logicform" method="get" action="http://localhost:7001\myapps\FirstServlet">
+        <CENTER>
+            <TABLE>
+                <TR>
+                    <TD>USER NAME:</TD>
+                    <TD><INPUT name="name" type="text"></TD>
+                </TR>
+                <TR>
+                    <TD>PASSWORD:</TD>
+                    <TD><INPUT name="pwd" type="password"></TD>
+                </TR>
+            </TABLE><BR>
+            <INPUT name="submit" value="submit" type="submit">
+        </CENTER>
+    </FORM>
+</BODY>
+
+</HTML>
+/* First Servlet */
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.io.*;
+public class FirstServlet extends HttpServlet
+{
+public void init(ServletConfig conf)
+{
+}
+public void doGet(HttpServletRequest req,HttpServletResponse res)throws ServletException,IOException
+{
+String name=req.getParameter("name");
+String pwd=req.getParameter("pwd");
+res.setContentType("text/html");
+PrintWriter pw=res.getWriter();
+pw.println("<HTML>
+
+<HEAD>");
+    pw.println("<TITLE> MyFirst Servlet Application</TITLE>
+</HEAD>");
+pw.println("
+
+<BODY>");
+    pw.println("Hi.... Servlet World Welcomes U..... Ms"+name);
+    pw.println("</BODY>
+
+</HTML>");
+}
+public void destroy()
+{
+}
+}
