@@ -8,7 +8,7 @@ face_cascade_path = 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python3
 face_cascade = cv2.CascadeClassifier(face_cascade_path)
 
 # Load the image
-img_path = 'C:\\Users\\Admin\\Desktop\\New notes\\LAB\\kalam.png'
+img_path = 'ML Lab\FACIAL RECOGNITION APPLICATION\kalam.png'
 img = cv2.imread(img_path)
 
 # Convert image to grayscale

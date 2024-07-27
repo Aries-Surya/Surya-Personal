@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 from sklearn import preprocessing
 
-file_path = r'DECISION TREES\data.csv'
+file_path = r'ML Lab\DECISION TREES\data.csv'
 # Load data
 df = pd.read_csv(file_path)
 

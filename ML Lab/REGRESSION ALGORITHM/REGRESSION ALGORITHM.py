@@ -24,7 +24,7 @@ class LocallyWeightedRegression:
     def predict(self, X, Y, query_point):
         # Add bias term to input matrix X
         X = np.hstack((X, np.ones((len(X), 1))))
-        q = np.array([query_point, 1])
+        q = np.append(query_point, 1)  # Add bias term to query_point
         W = self.kernel(q, X)
         theta = np.linalg.pinv(X.T @ (W @ X)) @ (X.T @ (W @ Y))
         pred = np.dot(q, theta)
@@ -32,10 +32,11 @@ class LocallyWeightedRegression:
     
     # Fit and predict function to predict output for all query points
     def fit_and_predict(self, X, Y):
-        Y_test, X_test = [], np.linspace(-np.max(X), np.max(X), len(X))
+        Y_test = []
+        X_test = np.linspace(np.min(X), np.max(X), len(X)).reshape(-1, 1)  # Ensure proper shape
         for x in X_test:
             pred = self.predict(X, Y, x)
-            Y_test.append(pred[0])
+            Y_test.append(pred)
         Y_test = np.array(Y_test)
         return Y_test
     
@@ -45,12 +46,13 @@ class LocallyWeightedRegression:
     
     # Function to fit and display scatter plot of all points
     def fit_and_show(self, X, Y):
-        Y_test, X_test = [], np.linspace(-np.max(X), np.max(X), len(X))
+        Y_test = []
+        X_test = np.linspace(np.min(X), np.max(X), len(X)).reshape(-1, 1)
         for x in X_test:
             pred = self.predict(X, Y, x)
-            Y_test.append(pred[0])
+            Y_test.append(pred)
         Y_test = np.array(Y_test)
-        plt.style.use('seaborn')
+        plt.style.use('ggplot')  # Use a default style if seaborn is not available
         plt.title(f"The scatter plot for the value of tau = {self.tau:.5f}")
         plt.scatter(X, Y, color='red', label='Original Data')
         plt.scatter(X_test, Y_test, color='green', label='Predicted Data')
@@ -58,8 +60,8 @@ class LocallyWeightedRegression:
         plt.show()
 
 # Reading the CSV files for X and Y values
-dfx = pd.read_csv('weightedX.csv')
-dfy = pd.read_csv('weightedY.csv')
+dfx = pd.read_csv(r'ML Lab\REGRESSION ALGORITHM\weightedX.csv')
+dfy = pd.read_csv(r'ML Lab\REGRESSION ALGORITHM\weightedY.csv')
 
 # Converting dataframes to numpy arrays
 X = dfx.values

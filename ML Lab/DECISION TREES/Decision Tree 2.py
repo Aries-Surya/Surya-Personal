@@ -11,7 +11,7 @@ import os
 col_names = ['pregnant', 'glucose', 'bp', 'skin', 'insulin', 'bmi', 'pedigree', 'age', 'label']
 
 # Read the CSV file, using raw string or double backslashes in the path
-pima = pd.read_csv(r"E:\Surya\DECISION TREES\pima-indians-diabetes.csv", header=None, names=col_names)
+pima = pd.read_csv(r"ML Lab\DECISION TREES\pima-indians-diabetes.csv", header=None, names=col_names)
 
 # Display the first few rows of the dataset to verify it's loaded correctly
 pima.head()

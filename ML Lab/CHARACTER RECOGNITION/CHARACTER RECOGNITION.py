@@ -6,22 +6,26 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import accuracy_score
 
 # Load data
-data = pd.read_csv('HR_comma_sep.csv')
+data = pd.read_csv(r'ML Lab\CHARACTER RECOGNITION\HR_comma_sep.csv', skipinitialspace=True)
 
 # Display first few rows of the data
 print(data.head())
+
+# Cleaning data: Removing leading/trailing spaces from column values
+data['Departments'] = data['Departments'].str.strip()
+data['salary'] = data['salary'].str.strip()
 
 # Creating labelEncoder
 le = preprocessing.LabelEncoder()
 
 # Converting string labels into numbers
 data['salary'] = le.fit_transform(data['salary'])
-data['Department'] = le.fit_transform(data['Department'])
+data['Departments'] = le.fit_transform(data['Departments'])
 
 # Splitting data into Features and Target
 X = data[['satisfaction_level', 'last_evaluation', 'number_project', 
           'average_montly_hours', 'time_spend_company', 'Work_accident',
-          'promotion_last_5years', 'Department', 'salary']]
+          'promotion_last_5years', 'Departments', 'salary']]
 y = data['left']
 
 # Split dataset into training set and test set (70% training and 30% test)

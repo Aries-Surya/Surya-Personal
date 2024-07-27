@@ -6,7 +6,7 @@ from sklearn import svm
 from tkinter import *
 
 # Load data
-spam = pd.read_csv('data.csv')
+spam = pd.read_csv('ML Lab\DETECTING SPAM MAILS\data.csv')
 
 # Split data into training and testing sets
 z = spam['EmailText']
