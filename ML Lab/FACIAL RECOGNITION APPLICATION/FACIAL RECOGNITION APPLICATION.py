@@ -2,13 +2,13 @@ import cv2
 
 # Path to the Haar Cascade XML file for frontal face detection
 # Adjust this path according to your actual file location
-face_cascade_path = 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\cv2\\data\\haarcascade_frontalface_default.xml'
+face_cascade_path = 'FACIAL RECOGNITION APPLICATION\haarcascade_frontalface_default.xml'
 
 # Load the Haar Cascade classifier for face detection
 face_cascade = cv2.CascadeClassifier(face_cascade_path)
 
 # Load the image
-img_path = 'ML Lab\FACIAL RECOGNITION APPLICATION\kalam.png'
+img_path = 'FACIAL RECOGNITION APPLICATION\Kalam.webp'
 img = cv2.imread(img_path)
 
 # Convert image to grayscale

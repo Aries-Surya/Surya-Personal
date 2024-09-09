@@ -5,7 +5,7 @@ from pgmpy.estimators import MaximumLikelihoodEstimator
 from pgmpy.inference import VariableElimination
 
 # Read Cleveland Heart Disease data
-heartDisease = pd.read_csv('heart.csv')
+heartDisease = pd.read_csv('Heart.csv')
 heartDisease = heartDisease.replace('?', np.nan)
 
 # Display the data

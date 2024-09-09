@@ -60,8 +60,8 @@ class LocallyWeightedRegression:
         plt.show()
 
 # Reading the CSV files for X and Y values
-dfx = pd.read_csv(r'ML Lab\REGRESSION ALGORITHM\weightedX.csv')
-dfy = pd.read_csv(r'ML Lab\REGRESSION ALGORITHM\weightedY.csv')
+dfx = pd.read_csv(r'D:\Projects\Surya-Personal\ML Lab\REGRESSION ALGORITHM\weightedX.csv')
+dfy = pd.read_csv(r'D:\Projects\Surya-Personal\ML Lab\REGRESSION ALGORITHM\weightedY.csv')
 
 # Converting dataframes to numpy arrays
 X = dfx.values
